@@ -1,77 +1,66 @@
 let result; 
 
-// string to number 
-result = Number('324');          // 324 
+result = Number('324');
 console.log(result);
-result = Number('324e-1');       // 32.4 
-console.log(result);
-
-// boolean to number 
-result = Number(true);           // 1 
-console.log(result);
-result = Number(false);          // 0 
+result = Number('324e-1');
 console.log(result);
 
-// empty string and null to number (result is 0) 
-result = Number(null);           // 0 
+result = Number(true);
 console.log(result);
-result = Number(' ');            // 0 
-console.log(result);
-
-// NaN is returned if the string cannot be converted 
-result = Number('hello');        // NaN 
-console.log(result);
-result = Number(undefined);      // NaN 
-console.log(result);
-result = Number(NaN);            // NaN 
+result = Number(false);
 console.log(result);
 
-// parseInt and parseFloat 
-result = parseInt('20.01');      // 20 
+result = Number(null);
 console.log(result);
-result = parseFloat('20.01');    // 20.01 
-console.log(result);
-
-// '+' operator to convert to number
-result = +'20.01';               // 20.01 
+result = Number(' ');
 console.log(result);
 
-// Math.floor 
-result = Math.floor('20.01');    // 20 
+result = Number('hello');
+console.log(result);
+result = Number(undefined);
+console.log(result);
+result = Number(NaN);
 console.log(result);
 
-// number to string 
-result = String(324);            // '324' 
+result = parseInt('20.01');
 console.log(result);
-result = String(2 + 4);          // '6' 
-console.log(result);
-
-// other data types to string 
-result = String(null);           // 'null' 
-console.log(result);
-result = String(undefined);      // 'undefined' 
-console.log(result);
-result = String(NaN);            // 'NaN' 
-console.log(result);
-result = String(true);           // 'true' 
-console.log(result);
-result = String(false);          // 'false' 
+result = parseFloat('20.01');
 console.log(result);
 
-// using toString() 
-result = (324).toString();       // '324' 
-console.log(result);
-result = true.toString();        // 'true' 
+result = +'20.01';
 console.log(result);
 
-// Boolean conversions 
-result = Boolean('');            // false 
+result = Math.floor('20.01');
 console.log(result);
-result = Boolean(0);             // false 
+ 
+result = String(324);
 console.log(result);
-result = Boolean(undefined);     // false 
+result = String(2 + 4);
 console.log(result);
-result = Boolean(null);          // false 
+ 
+result = String(null);
 console.log(result);
-result = Boolean(NaN);           // false 
+result = String(undefined);
+console.log(result);
+result = String(NaN);
+console.log(result);
+result = String(true);
+console.log(result);
+result = String(false);
+console.log(result);
+
+result = (324).toString();
+console.log(result);
+result = true.toString();
+console.log(result);
+ 
+result = Boolean('');
+console.log(result);
+result = Boolean(0);
+console.log(result);
+result = Boolean(undefined);
+console.log(result);
+result = Boolean(null);
+console.log(result);
+result = Boolean(NaN);
 console.log(result);
